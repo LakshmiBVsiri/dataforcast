@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brand Story UI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+    }
+
+    header nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 300;
+    }
+
+    .login-btn {
+      background-color: #ff6a95;
+      padding: 10px 20px;
+      border-radius: 20px;
+      color: white;
+      border: none;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      padding: 50px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 45%;
+    }
+
+    .hero-text h1 {
+      font-size: 3em;
+      background: linear-gradient(to right, #b16cea, #ff6a95);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-text p {
+      margin-top: 20px;
+      color: #bdb9cc;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons button {
+      margin-right: 15px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .get-started {
+      background-color: #b16cea;
+      color: white;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 20px;
+      max-width: 50%;
+    }
+
+    .card {
+      background-color: #000;
+      padding: 20px;
+      border-radius: 20px;
+      width: 200px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    .card p {
+      color: #bdb9cc;
+    }
+
+    .card-small {
+      font-size: 0.9em;
+    }
+
+    .chart-img {
+      margin-top: 10px;
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .chart-img:hover {
+      transform: scale(1.05);
+    }
+
+    .footer-logos {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 40px auto;
+      opacity: 0.5;
+    }
+
+    .footer-logos span {
+      color: white;
+      font-weight: 300;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="font-weight: bold; font-size: 1.2em;">FRcast.io</div>
+    <nav>
+      <a href=" http://192.168.31.45:8501/">Forecast</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Demand Forecast & Sales Analyser</h1>
+      <p>Predict future demand and analyze sales trends to optimize business performance.</p>
+      <div class="buttons">
+        <button class="get-started" onclick="location.href='http://10.20.207.158:8501'">Get Started</button>
+      </div>      
+    </div>
+
+    <div class="cards">
+      <div class="card">
+    
+        <img src="D:\all1\all\scm\scmpro\1aad5d85be37f86529fbdf16b95c7af8.jpg" class="chart-img" alt="Bar Chart">
+      </div>
+
+      <div class="card">
+    
+        <img src="D:\all1\all\scm\scmpro\6be128344514caf38759c55712b24ab1.jpg" class="chart-img" alt="Pie Chart">
+      </div>
+
+      <div class="card">
+       
+        <img src="D:\all1\all\scm\scmpro\7d52f2a4461dd9b0fc8f67b688956c8f.jpg" class="chart-img" alt="Growth Chart">
+      </div>
+
+      <div class="card">
+       
+        <img src="D:\all1\all\scm\scmpro\e0996abf2cc49d103bd7c5b8c6feed8d.jpg" class="chart-img" alt="Line Chart">
+      </div>
+    </div>
+  </section>
+</body>
+</html>
